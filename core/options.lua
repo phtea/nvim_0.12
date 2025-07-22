@@ -1,12 +1,22 @@
 vim.g.netrw_banner = 0
 vim.g.mapleader = " "
 
-vim.cmd [[
-  set nu rnu signcolumn=yes winborder=single
-  set tabstop=4 shiftwidth=2
-  set scrolloff=10 cursorline lazyredraw
-  set path+=**
-]]
+-- General settings
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.signcolumn = "yes"
+vim.opt.winbar = "single"
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 2
+vim.opt.swapfile = false
+vim.opt.scrolloff = 10
+vim.opt.cursorline = true
+vim.opt.lazyredraw = true
+vim.opt.path:append("**")
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.termguicolors = true
+vim.opt.showcmd = true
 
 -- Enable persistent undo
 vim.opt.undofile = true
@@ -17,5 +27,5 @@ vim.opt.undodir = undodir
 
 -- Auto-create the undo directory if it doesn't exist
 if vim.fn.isdirectory(undodir) == 0 then
-    vim.fn.mkdir(undodir, "p")
+	vim.fn.mkdir(undodir, "p")
 end

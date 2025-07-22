@@ -5,6 +5,7 @@ vim.pack.add({
   'https://github.com/kylechui/nvim-surround',
   'https://github.com/lewis6991/gitsigns.nvim',
   'https://github.com/stevearc/oil.nvim',
+  'https://github.com/rebelot/kanagawa.nvim',
 })
 
 -- auto load plugins settings

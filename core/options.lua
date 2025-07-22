@@ -6,5 +6,4 @@ vim.cmd [[
   set tabstop=4 shiftwidth=2
   set scrolloff=10 cursorline lazyredraw
   set path+=**
-  colo habamax
 ]]

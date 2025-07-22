@@ -1,7 +1,7 @@
 require('kanagawa').setup({
 	compile = false,
 	undercurl = true,
-	commentStyle = { italic = false }, -- dknfskdnfksdnfknd
+	commentStyle = { italic = false },
 	functionStyle = {},
 	keywordStyle = { italic = false },
 	statementStyle = { bold = true },
@@ -27,13 +27,14 @@ require('kanagawa').setup({
 			TelescopeResultsBorder     = { fg = theme.ui.bg_m1, bg = theme.ui.bg_m1 },
 			TelescopePreviewNormal     = { bg = theme.ui.bg_dim },
 			TelescopePreviewBorder     = { bg = theme.ui.bg_dim, fg = theme.ui.bg_dim },
+
 			NormalFloat                = { bg = "none" },
 			FloatBorder                = { bg = "none" },
 			FloatTitle                 = { bg = "none" },
-
 			NormalDark                 = { fg = theme.ui.fg_dim, bg = theme.ui.bg_m3 },
 			LazyNormal                 = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
 			MasonNormal                = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
+
 			DiagnosticVirtualTextHint  = makeDiagnosticColor(theme.diag.hint),
 			DiagnosticVirtualTextInfo  = makeDiagnosticColor(theme.diag.info),
 			DiagnosticVirtualTextWarn  = makeDiagnosticColor(theme.diag.warning),

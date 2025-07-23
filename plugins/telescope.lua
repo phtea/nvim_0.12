@@ -43,6 +43,18 @@ vim.keymap.set("n", "<leader>8", function() builtin.grep_string({ search = vim.f
 	{ desc = "Grep word under cursor" })
 vim.keymap.set("n", "<leader>b", builtin.buffers, { desc = "Find buffers" })
 vim.keymap.set("n", "<leader>?", builtin.help_tags, { desc = "Find help tags" })
-vim.keymap.set("n", "grr", builtin.lsp_references, { desc = "Find references" })
+
+-- Lsp related --
+
+-- Remove default LSP keymaps if present
+pcall(vim.keymap.del, "n", "gri")
+pcall(vim.keymap.del, "n", "grr")
+pcall(vim.keymap.del, "x", "gra")
+pcall(vim.keymap.del, "n", "gra")
+pcall(vim.keymap.del, "n", "grn")
+pcall(vim.keymap.del, "n", "gd")
+
 vim.keymap.set("n", "gd", builtin.lsp_definitions, { desc = "Find definitions" })
 vim.keymap.set("n", "gt", builtin.lsp_type_definitions, { desc = "Find type definitions" })
+vim.keymap.set("n", "gr", builtin.lsp_references, { desc = "Find references" })
+vim.keymap.set("n", "gi", builtin.lsp_implementations, { desc = "Find implementations" })

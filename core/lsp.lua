@@ -18,4 +18,4 @@ vim.lsp.config('*', {
 })
 
 vim.diagnostic.config({ virtual_text = { current_line = true } })
-vim.lsp.enable({ 'clangd', 'lua_ls' })
+vim.lsp.enable({ 'clangd', 'lua_ls', 'solargraph', })

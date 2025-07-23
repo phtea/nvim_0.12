@@ -1,7 +1,7 @@
 vim.pack.add({
 	'https://github.com/nvim-telescope/telescope.nvim',
 	'https://github.com/nvim-lua/plenary.nvim',
-	{ src = 'https://github.com/ThePrimeagen/harpoon',            version = "harpoon2", },
+	{ src = 'https://github.com/ThePrimeagen/harpoon', version = "harpoon2", },
 	'https://github.com/kylechui/nvim-surround',
 	'https://github.com/lewis6991/gitsigns.nvim',
 	'https://github.com/stevearc/oil.nvim',

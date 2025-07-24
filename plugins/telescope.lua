@@ -1,6 +1,5 @@
 local telescope = require("telescope")
 local builtin = require("telescope.builtin")
-local themes = require("telescope.themes")
 
 telescope.setup({
 	defaults = {
@@ -43,6 +42,15 @@ vim.keymap.set("n", "<leader>8", function() builtin.grep_string({ search = vim.f
 	{ desc = "Grep word under cursor" })
 vim.keymap.set("n", "<leader>b", builtin.buffers, { desc = "Find buffers" })
 vim.keymap.set("n", "<leader>?", builtin.help_tags, { desc = "Find help tags" })
+vim.keymap.set("n", "<leader>n", function()
+	local config_path = vim.fn.stdpath("config")
+	builtin.find_files({
+		prompt_title = "Neovim Config",
+		cwd = config_path,
+		hidden = true,
+	})
+end, { desc = "Find files in current Neovim config" })
+
 
 -- Lsp related --
 

@@ -7,7 +7,6 @@ vim.pack.add({
 	'https://github.com/stevearc/oil.nvim',
 	'https://github.com/rebelot/kanagawa.nvim',
 	'https://github.com/nvim-treesitter/nvim-treesitter',
-	'https://github.com/RRethy/vim-illuminate',
 })
 
 -- auto load plugins settings
